@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>My Love Surprise ❤️</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+
+body{
+
+height:100vh;
+overflow:hidden;
+background:#14001f;
+color:white;
+
+}
+
+
+
+/* OPENING */
+
+.loader{
+
+position:fixed;
+width:100%;
+height:100vh;
+
+background:
+linear-gradient(45deg,#ff0066,#8500ff);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:55px;
+
+z-index:99;
+
+animation:hide 3s forwards;
+
+}
+
+
+@keyframes hide{
+
+80%{opacity:1}
+
+100%{
+opacity:0;
+visibility:hidden;
+}
+
+}
+
+
+
+
+
+
+
+.page{
+
+position:absolute;
+
+width:100%;
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:25px;
+
+
+opacity:0;
+
+visibility:hidden;
+
+
+transform:
+scale(.7)
+rotateY(40deg);
+
+
+transition:1s;
+
+
+}
+
+
+
+
+.page.active{
+
+opacity:1;
+
+visibility:visible;
+
+
+transform:
+scale(1)
+rotateY(0deg);
+
+
+}
+
+
+
+
+
+
+
+h1{
+
+font-size:55px;
+
+animation:title 2s infinite alternate;
+
+}
+
+
+p{
+
+font-size:22px;
+
+margin:15px;
+
+}
+
+
+
+@keyframes title{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+
+
+
+
+
+
+.home{
+
+background:
+
+linear-gradient(#0008,#0008),
+url("her1.jpg");
+
+background-size:cover;
+
+}
+
+
+
+
+
+
+.memory{
+
+background:#260035;
+
+}
+
+
+
+
+
+.photosPage{
+
+background:
+
+linear-gradient(#0008,#0008),
+url("her4.jpg");
+
+background-size:cover;
+
+}
+
+
+
+
+
+.child{
+
+background:
+
+linear-gradient(#0008,#0008),
+url("childhood.jpg");
+
+background-size:cover;
+
+}
+
+
+.final{
+
+background:
+
+radial-gradient(circle,#ff4fa3,#25002f,#000);
+
+overflow:hidden;
+
+}
+
+
+
+
+
+
+
+button{
+
+padding:16px 35px;
+
+border:none;
+
+border-radius:40px;
+
+background:#ff4fa3;
+
+color:white;
+
+font-size:18px;
+
+
+cursor:pointer;
+
+margin-top:25px;
+
+
+box-shadow:
+0 0 25px pink;
+
+
+transition:.3s;
+
+
+}
+
+
+
+button:hover{
+
+transform:scale(1.15);
+
+}
+
+
+
+
+
+
+
+
+/* GALLERY */
+
+
+.gallery{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+
+
+.gallery img{
+
+width:220px;
+
+height:280px;
+
+object-fit:cover;
+
+border-radius:25px;
+
+
+box-shadow:
+0 0 35px pink;
+
+
+animation:photo 3s infinite alternate;
+
+}
+
+
+
+@keyframes photo{
+
+from{
+
+transform:rotate(-5deg);
+
+}
+
+to{
+
+transform:rotate(5deg);
+
+}
+
+}
+
+
+
+
+
+
+
+
+/* 7 PHOTO PAGE */
+
+
+.photoWall{
+
+width:90%;
+
+height:70%;
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:18px;
+
+justify-content:center;
+
+perspective:1000px;
+
+}
+
+
+
+
+
+.card{
+
+width:160px;
+
+height:210px;
+
+
+overflow:hidden;
+
+border-radius:25px;
+
+
+box-shadow:
+
+0 0 35px #ff4fa3;
+
+
+animation:
+
+floatCard 4s infinite;
+
+
+transition:.5s;
+
+
+}
+
+
+
+.card:hover{
+
+transform:
+
+scale(1.2)
+rotateY(20deg);
+
+}
+
+
+
+.card img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+
+
+@keyframes floatCard{
+
+50%{
+
+transform:translateY(-25px);
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+/* CHILD */
+
+.child img{
+
+
+width:280px;
+
+height:350px;
+
+
+object-fit:cover;
+
+
+border-radius:25px;
+
+
+box-shadow:
+
+0 0 40px pink;
+
+
+animation:float 3s infinite;
+
+}
+
+
+
+@keyframes float{
+
+
+50%{
+
+transform:translateY(-25px);
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FINAL ROMANTIC PAGE */
+
+
+.bigHeart{
+
+
+font-size:130px;
+
+
+animation:
+
+heartbeat 1.5s infinite;
+
+
+filter:
+
+drop-shadow(0 0 40px pink);
+
+}
+
+
+
+
+@keyframes heartbeat{
+
+
+50%{
+
+transform:scale(1.25);
+
+}
+
+
+}
+
+
+
+
+
+.loveTitle{
+
+font-size:70px;
+
+
+text-shadow:
+
+0 0 40px pink;
+
+animation:glow 2s infinite;
+
+}
+
+
+
+
+
+@keyframes glow{
+
+
+50%{
+
+text-shadow:
+
+0 0 70px white;
+
+}
+
+
+}
+
+
+
+
+
+
+#typing{
+
+font-size:30px;
+
+color:#ffd6ef;
+
+min-height:45px;
+
+}
+
+
+
+
+.finalText{
+
+font-size:24px;
+
+max-width:700px;
+
+line-height:1.5;
+
+
+}
+
+
+
+
+.ring{
+
+font-size:70px;
+
+animation:
+
+rotate 3s infinite;
+
+}
+
+
+
+@keyframes rotate{
+
+
+50%{
+
+transform:
+
+rotate(20deg)
+scale(1.2);
+
+}
+
+}
+
+
+
+
+
+.stars span{
+
+position:absolute;
+
+font-size:35px;
+
+animation:
+
+star 6s infinite;
+
+
+}
+
+
+
+.stars span:nth-child(1){
+
+left:10%;
+top:20%;
+
+}
+
+
+.stars span:nth-child(2){
+
+right:10%;
+top:30%;
+
+}
+
+
+.stars span:nth-child(3){
+
+left:20%;
+bottom:20%;
+
+}
+
+
+.stars span:nth-child(4){
+
+right:20%;
+bottom:20%;
+
+}
+
+
+.stars span:nth-child(5){
+
+top:10%;
+left:50%;
+
+}
+
+
+
+
+
+@keyframes star{
+
+
+50%{
+
+transform:
+translateY(-40px)
+rotate(180deg);
+
+}
+
+}
+
+
+
+
+
+
+
+
+/* HEART FLOAT */
+
+
+.heart{
+
+position:fixed;
+
+bottom:-20px;
+
+animation:
+
+heart 8s linear infinite;
+
+z-index:-1;
+
+}
+
+
+
+@keyframes heart{
+
+
+to{
+
+transform:
+
+translateY(-110vh)
+rotate(360deg);
+
+
+opacity:0;
+
+}
+
+}
+
+
+
+
+/* RESPONSIVE DESIGN */
+html,body{
+ width:100%;
+ min-height:100%;
+ overflow-x:hidden;
+}
+
+.page{
+ min-height:100dvh;
+ height:100dvh;
+ padding:clamp(15px,4vw,40px);
+}
+
+h1{
+ font-size:clamp(28px,7vw,55px);
+}
+
+p{
+ font-size:clamp(16px,4vw,22px);
+}
+
+button{
+ font-size:clamp(14px,3.5vw,18px);
+ padding:12px clamp(20px,6vw,35px);
+}
+
+.gallery img{
+ width:clamp(120px,38vw,220px);
+ height:clamp(160px,45vw,280px);
+}
+
+.photoWall{
+ width:95%;
+ height:auto;
+ max-height:65vh;
+ overflow:auto;
+ gap:12px;
+}
+
+.card{
+ width:clamp(90px,25vw,160px);
+ height:clamp(120px,32vw,210px);
+}
+
+.child img{
+ width:clamp(180px,60vw,280px);
+ height:clamp(230px,70vw,350px);
+}
+
+.loveTitle{
+ font-size:clamp(35px,10vw,70px);
+}
+
+.bigHeart{
+ font-size:clamp(70px,25vw,130px);
+}
+
+.finalText{
+ font-size:clamp(16px,4vw,24px);
+ max-width:90%;
+}
+
+.ring{
+ font-size:clamp(45px,15vw,70px);
+}
+
+.loader{
+ font-size:clamp(28px,8vw,55px);
+ text-align:center;
+ padding:20px;
+}
+
+@media(max-width:600px){
+ .home,.photosPage,.child,.memory,.final{
+  background-position:center;
+ }
+ .gallery{
+  gap:10px;
+ }
+ .stars span{
+  font-size:22px;
+ }
+}
+
+</style>
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+<div class="loader">
+
+A Surprise For You ❤️
+
+</div>
+
+
+
+
+
+
+<audio id="music" autoplay loop>
+
+<source src="n.mp3" type="audio/mp3">
+
+</audio>
+
+
+
+
+
+
+
+
+
+
+
+<!-- PAGE 1 -->
+
+
+<div class="page home active">
+
+
+<h1>
+
+Hey My Beautiful Girl ❤️
+
+</h1>
+
+
+<p>
+
+I made this world only for you ✨
+
+</p>
+
+
+<button onclick="nextPage()">
+
+Start The Journey 💌
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- PAGE 2 -->
+
+
+<div class="page memory">
+
+
+<h1>
+
+Memories 📸
+
+</h1>
+
+
+<p>
+
+Every moment is special ❤️
+
+</p>
+
+
+
+<div class="gallery">
+
+
+<img src="1.jpg">
+
+<img src="2.jpg">
+
+<img src="3.jpg">
+
+
+</div>
+
+
+
+
+<button onclick="nextPage()">
+
+More Memories 🌹
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- PAGE 3 -->
+
+
+<div class="page photosPage">
+
+
+<h1>
+
+Always Beautiful Of You 💖
+
+</h1>
+
+
+<p>
+
+Every smile of yours is So Cute ✨
+
+</p>
+
+
+
+
+<div class="photoWall">
+
+
+<div class="card"><img src="4.jpg"></div>
+<div class="card"><img src="5.jpg"></div>
+<div class="card"><img src="6.jpg"></div>
+<div class="card"><img src="7.jpg"></div>
+<div class="card"><img src="8.jpg"></div>
+<div class="card"><img src="9.jpg"></div>
+
+
+
+</div>
+
+
+
+
+
+<button onclick="nextPage()">
+
+🌟 Little Princess 👑
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- PAGE 4 -->
+
+
+<div class="page child">
+
+
+<h1>
+
+1 December, 2006
+
+</h1>
+
+
+<p>
+
+The cutest version of you ❤️
+
+</p>
+
+
+<img src="10.jpg">
+
+
+
+
+<button onclick="nextPage()">
+
+Final Surprise 💕
+
+</button>
+
+
+</div>
+
+
+<!-- FINAL PAGE -->
+
+
+<div class="page final">
+
+
+<div class="bigHeart">
+
+❤️
+
+</div>
+
+
+
+<h1 class="loveTitle">
+
+I Love You
+
+</h1>
+
+
+
+<h2 id="typing"></h2>
+
+
+
+
+<p class="finalText">
+
+You are the most beautiful chapter of my life.
+Thank you for coming into my world ✨
+
+</p>
+
+
+
+
+<div class="ring">
+
+💍
+
+</div>
+
+
+
+
+<h2>
+
+Forever My Favourite Person 🌹
+
+</h2>
+
+
+
+
+<div class="stars">
+
+<span>✨</span>
+<span>❤️</span>
+<span>✨</span>
+<span>🌸</span>
+<span>❤️</span>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+let pages=document.querySelectorAll(".page");
+
+let current=0;
+
+
+
+function nextPage(){
+
+
+pages[current]
+.classList.remove("active");
+
+
+current++;
+
+
+if(current>=pages.length)
+
+current=pages.length-1;
+
+
+
+setTimeout(()=>{
+
+
+pages[current]
+.classList.add("active");
+
+
+},300);
+
+
+}
+
+
+
+
+
+
+
+let msg=
+"Every day with you feels like a dream ❤️";
+
+
+let i=0;
+
+
+function typing(){
+
+
+if(i<msg.length){
+
+
+document.getElementById("typing")
+.innerHTML+=msg.charAt(i);
+
+
+i++;
+
+
+setTimeout(typing,80);
+
+
+}
+
+}
+
+
+setTimeout(typing,2500);
+
+
+
+
+
+
+
+
+document.body.onclick=()=>{
+
+document.getElementById("music").play();
+
+};
+
+
+
+
+
+
+
+
+
+setInterval(()=>{
+
+
+let h=document.createElement("div");
+
+
+h.className="heart";
+
+
+h.innerHTML="❤️";
+
+
+h.style.left=
+Math.random()*100+"vw";
+
+
+
+h.style.fontSize=
+20+Math.random()*30+"px";
+
+
+
+document.body.appendChild(h);
+
+
+
+setTimeout(()=>{
+
+h.remove();
+
+},8000);
+
+
+
+},300);
+
+
+
+</script>
+
+
+</body>
+</html>
